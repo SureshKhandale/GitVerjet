@@ -7,8 +7,7 @@ public class Sonali {
 		System.out.println("Verjet");
 		System.out.println("hi");
 		System.out.println("test");
-		System.out.println("hello java");
-		
+		System.out.println("my first project");
 	}
 
 }
