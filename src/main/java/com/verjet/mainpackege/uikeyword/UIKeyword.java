@@ -11,6 +11,7 @@ public class UIKeyword {
 
 	public static void openBrowser(String browserName) {
 		if (browserName.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:/Users/SAI/Downloads/chromedriver_win32 (3)/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(options);

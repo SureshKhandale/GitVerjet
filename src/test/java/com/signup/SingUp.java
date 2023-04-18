@@ -8,7 +8,8 @@ public class SingUp extends TestBase {
 	@Test
 	public void VerifyThatAllTheSpecifiedFieldsArePresentOnTheSignUpPage() {
 //		UIKeyword.scrollWindow(0,300);
-
+		
 	}
 
 }
+  
