@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.signup.SingUp">
+      <class name="com.signup.SignInTestCase">
         <methods>
-          <include name="setUpMethod"/>
-          <include name="VerifyThatAllTheSpecifiedFieldsArePresentOnTheSignUpPage"/>
-          <include name="tearDownMethod"/>
+          <include name="VerifyThatAllFieldsArePresentOnSignInPage"/>
         </methods>
-      </class> <!-- com.signup.SingUp -->
+      </class> <!-- com.signup.SignInTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

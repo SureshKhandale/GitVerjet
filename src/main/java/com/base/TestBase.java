@@ -11,7 +11,7 @@ public class TestBase {
 	@BeforeMethod
 	public void setUpMethod() throws Exception {
 		UIKeyword.openBrowser("Chrome");
-		UIKeyword.lunchUrl("");
+		UIKeyword.lunchUrl("https://dev.verjet.com/");
 		
 	}
 	
