@@ -1,5 +1,6 @@
 package com.verjet.mainpackege.uikeyword;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,7 +14,7 @@ public class UIKeyword {
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(options);
+			Chromedriver driver = new ChromeDriver(options);
 
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
 			driver = new FirefoxDriver();
@@ -23,12 +24,21 @@ public class UIKeyword {
 	}
 
 	public static void lunchUrl(String url) {
-		driver.get(url);
+		UIKeyword.get(url);
 	}
 
 	public static void scrollWindow(int x, int y) {
-		driver.executeScript("window.scrollBy(arguments[0],arguments[1])", x, y);
+		UIKeyword.executeScript("window.scrollBy(arguments[0],arguments[1])", x, y);
 
+	}
+
+	public static void closed() {
+		UIKeyword.closed();
+	}
+
+	public static void clickOnSrchBtn(By cssSelector) {
+		driver.
+		
 	}
 
 }
