@@ -24,9 +24,11 @@ public class Jewelry {
 
 		driver.findElement(By.cssSelector("[id=searchicon]")).click();
 		driver.executeAsyncScript("window.scrollBy(0,300)");
+		driver.executeAsyncScript("window.scrollBy(0,300)");
 		
 		Thread.sleep(4000);
 		driver.close();
+		
 	}
 
 	@Test
@@ -42,6 +44,8 @@ public class Jewelry {
 		driver.findElement(By.xpath("//input[@data-cy='passwordInput']")).sendKeys("suresh@44");
 		driver.findElement(By.xpath("//button[@id='signInButton']")).click();
 		driver.close();
+		
+		
 	}
 	
 
