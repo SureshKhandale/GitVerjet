@@ -5,7 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,9 +13,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.testng.Assert;
 
-public class UIKeyword {
+public class UIKeyword  {
 	public static RemoteWebDriver driver;
 	public static FluentWait<WebDriver> wait;
 
@@ -41,7 +40,13 @@ public class UIKeyword {
 
 	public static void lunchUrl(String url) {
 		driver.get(url);
+		
 	}
+
+	public static void closed() {
+		UIKeyword.closed();
+	}
+	
 
 //	public static void scrollWindow(int x, int y) {
 //		driver.executeScript("window.scrollBy(arguments[0],arguments[1])", x, y);
@@ -112,16 +117,10 @@ public class UIKeyword {
 	public static void clickOnSingUpButton(String locator) {
 		driver.findElement(By.cssSelector(locator)).click();
 	}
-	
-	
-	
+
 	public static void clickOnSignInButton(By by) {
 		driver.findElement(by).click();
 	}
-	
-	
-	
-	
 
 	public static void clickOnSignInButton(String locator) {
 		driver.findElement(By.cssSelector(locator)).click();
@@ -131,7 +130,7 @@ public class UIKeyword {
 	public static void clickOnEmailPhoneNumber(String locator) {
 		driver.findElement(By.cssSelector(locator)).click();
 		driver.findElement(By.cssSelector(locator)).sendKeys("khandalesuresh44@gmail.com");
-		
+
 	}
 
 	public static void clickOnContinueSignUpButton(String locator) {
@@ -142,7 +141,6 @@ public class UIKeyword {
 		driver.findElement(By.cssSelector(locator)).click();
 		driver.findElement(By.cssSelector(locator)).sendKeys("suresh@44");
 	}
-	
-	
 
+	
 }
