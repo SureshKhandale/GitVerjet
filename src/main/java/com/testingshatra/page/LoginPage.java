@@ -1,8 +1,28 @@
 package com.testingshatra.page;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.verjet.mainpackege.uikeyword.UIKeyword;
+
 public class LoginPage {
-	public static void main(String[] args) {
-		System.out.println("Hello");
-	}
+	
+//	@FindBy(css  = "button[id=\"signUpButton\"]")
+//	public WebElement singUpBtn;
+//	
+//	public LoginPage() {
+//		 PageFactory.initElements(UIKeyword.driver, LoginPage.class);
+//	}
+//	
+//	
+//	public void waitForSingUpBtn() {
+//		UIKeyword.waitForElementToBePresent(singUpBtn, "Sing Up");
+//	}
+//	
+//	public  void clickOnSingUpBtn() {
+//		//waitForSingUpBtn();
+//		singUpBtn.click();
+//	}
 
 }
