@@ -42,7 +42,7 @@ public class SingUpTest extends TestBase {
 //		Thread.sleep(5000);
 //		UIKeyword.waitForElementToBePresent(By.cssSelector("div.small_text.mb-3.form-group"));
 //		UIKeyword.clickOnCheckbox("div.small_text.mb-3.form-group");
-//		
+	
 
 		Thread.sleep(5000);
 		UIKeyword.waitForElementToBePresent(By.cssSelector("button#signUpButton"));
