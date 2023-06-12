@@ -1,12 +1,9 @@
 package com.testingshatra.page;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-import com.verjet.mainpackege.uikeyword.UIKeyword;
 
 public class LoginPage {
+	
 	
 //	@FindBy(css  = "button[id=\"signUpButton\"]")
 //	public WebElement singUpBtn;

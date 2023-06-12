@@ -12,14 +12,13 @@ public class TestBase {
 		UIKeyword.openBrowser("Chrome");
 
 		UIKeyword.lunchUrl("https://dev.verjet.com/");
-
 	}
+	
 
 	@AfterMethod
 	public void tearDownMethod() throws Exception {
-		UIKeyword.closed();
-
-		
+		//UIKeyword.closed();
+			
 
 	}
 }
